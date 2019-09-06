@@ -46,6 +46,7 @@ public class DBManager {
 						"sN8-fSJnyXtOuudA53r4pbIx8o");
 			} else {
 				db = DB.getConnection();
+				db.setSchema("salesforce");
 			}
 			
 			mapper = new ObjectMapper();
