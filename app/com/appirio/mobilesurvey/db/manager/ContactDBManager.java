@@ -17,7 +17,7 @@ public class ContactDBManager extends DBManager {
 	}
 
 	public boolean isApprovedContact(String userId) throws MSServicesException {
-		JsonNode users = queryToJson("select id from Contact where sfid = '" + userId + "' and Direct_Dial_Activated__c and Direct_Dial_Mobile_User__c;");
+		JsonNode users = queryToJson("select id from salesforce.Contact where sfid = '" + userId + "' and Direct_Dial_Activated__c and Direct_Dial_Mobile_User__c;");
 		
 		return users.size() > 0;
 	}
@@ -28,7 +28,7 @@ public class ContactDBManager extends DBManager {
 		//	return DEFAULT_CONTACT_REG;
 		//}
 		
-		JsonNode users = queryToJson("select sfid, Name, Email, MobilePhone from Contact where Email = '" + email + "';");
+		JsonNode users = queryToJson("select sfid, Name, Email, MobilePhone from salesforce.contact where Email = '" + email + "';");
 		
 		if(users.size() > 0) {
 			ObjectNode user = (ObjectNode) users.get(0);
