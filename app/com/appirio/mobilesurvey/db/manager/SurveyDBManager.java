@@ -233,7 +233,7 @@ public class SurveyDBManager extends DBManager {
 	    if(surveySubmission != null) {
 		    // Inserting to Survey Submission DB
 			System.out.println("Inserting into Survey Submission Table");
-		    insert((ObjectNode)surveySubmission, "dd_survey_submission__c");
+		    insert((ObjectNode)surveySubmission, "salesforce.dd_survey_submission__c");
 		    
 	    }
 	    

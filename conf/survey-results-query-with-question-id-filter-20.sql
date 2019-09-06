@@ -61,8 +61,8 @@
 	a.marketing_group__c marketing_group__c,
 	a.tdlinx_account_level_e__c tdlinx_account_level_e__c
 FROM
-    DMS_Survey_Result__c s
-    INNER JOIN Account a on a.sfid = Account__c
+    salesforce.DMS_Survey_Result__c s
+    INNER JOIN salesforce.Account a on a.sfid = Account__c
 WHERE 
     s.Contact__c = ''{0}''
     AND s.Question__c in ({1})

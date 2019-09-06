@@ -15,6 +15,6 @@ SELECT
  	message__c, 
  	contact__c
 FROM
-	dd_survey_submission__c
+	salesforce.dd_survey_submission__c
 WHERE
 	external_id__c = ''{0}''
