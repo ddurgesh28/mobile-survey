@@ -561,19 +561,19 @@ public class SurveyDBManager extends DBManager {
     private void insertSurveyResults(List<ObjectNode> surveyResults) throws MSServicesException {
     	// TODO: clear the name field that is being copied from question
         for (ObjectNode surveyR : surveyResults) {
-            insert(surveyR, "dms_survey_result__c");
+            insert(surveyR, "salesforce.dms_survey_result__c");
         }
     }
 	
     private void insertSurveyResultsBrands(List<ObjectNode> surveyResultsBrandList) throws MSServicesException {
     	for (ObjectNode srBrand : surveyResultsBrandList) {
-    		insert(srBrand, "dd_survey_result_brands__c");
+    		insert(srBrand, "salesforce.dd_survey_result_brands__c");
     	}
     }
 	
     private void insertSurveyResultsPhotos(List<ObjectNode> photosList) throws MSServicesException {
     	for (ObjectNode photoR : photosList) {
-    		insert(photoR, "dd_survey_result_photos__c");
+    		insert(photoR, "salesforce.dd_survey_result_photos__c");
     	}
     }
     
