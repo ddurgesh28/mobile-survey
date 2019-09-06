@@ -34,7 +34,7 @@ WHERE
                       sm.dd_survey_group__c
                   FROM
                       salesforce.dd_group_member__c gm
-                      INNER JOIN dd_survey_member__c sm ON sm.dd_survey_group__c = gm.dd_survey_group__c
+                      INNER JOIN salesforce.dd_survey_member__c sm ON sm.dd_survey_group__c = gm.dd_survey_group__c
                   WHERE
                       gm.contact__c = ''{0}''
               ) 
