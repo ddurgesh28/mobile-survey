@@ -50,11 +50,11 @@ public class ContactDBManager extends DBManager {
 	}
 	
 	private void saveApprovedContact(String sfid) throws MSServicesException {
-		executeStatement("update contact set Direct_Dial_Activation_Code__c = null, Direct_Dial_Activation_Code_Time_Set__c = null, Direct_Dial_Activated__c = true where sfid = '"+ sfid +"';");		
+		executeStatement("update salesforce.contact set Direct_Dial_Activation_Code__c = null, Direct_Dial_Activation_Code_Time_Set__c = null, Direct_Dial_Activated__c = true where sfid = '"+ sfid +"';");		
 	}
 	
 	public String getEmail(String contactId) throws MSServicesException {
-		ArrayNode result = queryToJson("select email from Contact where sfid = '" + contactId + "'");
+		ArrayNode result = queryToJson("select email from salesforce.Contact where sfid = '" + contactId + "'");
 		
 		if(result.size() > 0) {
 			if(result.get(0).has("email")) {
