@@ -22,9 +22,9 @@ SELECT
     ag.sfid assigned_goal__c,
     s.sector__c
 FROM 
-    dms_question__c q
-    INNER JOIN dms_survey__c s ON s.sfid = q.dms_survey__c
-    LEFT OUTER JOIN dd_assigned_goal__c ag on (ag.dd_survey_question__c = q.sfid and ag.contact__c = ''{0}'') 
+    salesforce.dms_question__c q
+    INNER JOIN salesforce.dms_survey__c s ON s.sfid = q.dms_survey__c
+    LEFT OUTER JOIN salesforce.dd_assigned_goal__c ag on (ag.dd_survey_question__c = q.sfid and ag.contact__c = ''{0}'') 
 WHERE 
     dms_survey__c in ({1})
 ORDER BY

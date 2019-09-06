@@ -21,6 +21,6 @@ SELECT
     zip_codes__c,
     category__c
 FROM
-    dms_survey__c s
+    salesforce.dms_survey__c s
 WHERE
 	sfid = ''{0}''
