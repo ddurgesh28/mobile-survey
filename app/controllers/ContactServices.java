@@ -4,8 +4,8 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import play.mvc.With;
 
-import com.appirio.mobilesurvey.db.MSServicesException;
-import com.appirio.mobilesurvey.db.manager.ContactDBManager;
+import com.demo.mobilesurvey.db.MSServicesException;
+import com.demo.mobilesurvey.db.manager.ContactDBManager;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 

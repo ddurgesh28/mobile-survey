@@ -3,9 +3,9 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.appirio.mobilesurvey.db.MSServicesException;
-import com.appirio.mobilesurvey.db.manager.ContactDBManager;
-import com.appirio.mobilesurvey.db.manager.api17.AccountDBManager17;
+import com.demo.mobilesurvey.db.MSServicesException;
+import com.demo.mobilesurvey.db.manager.ContactDBManager;
+import com.demo.mobilesurvey.db.manager.api17.AccountDBManager17;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 

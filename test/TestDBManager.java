@@ -1,5 +1,5 @@
-import com.appirio.mobilesurvey.db.MSServicesException;
-import com.appirio.mobilesurvey.db.manager.DBManager;
+import com.demo.mobilesurvey.db.MSServicesException;
+import com.demo.mobilesurvey.db.manager.DBManager;
 
 
 public class TestDBManager extends DBManager {
