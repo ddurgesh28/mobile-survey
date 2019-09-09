@@ -16,7 +16,7 @@ var SURVEY_SUBMIT_PATH = BASE_PATH + SERVICE_BUILD_NUMBER + '/survey';
 var GOAL_DASHBOARD_PATH = BASE_PATH + SERVICE_BUILD_NUMBER + '/goal/achievements/:startdate/:enddate/:includeDetails';
 var CONTACT_INFO_PATH = BASE_PATH + SERVICE_BUILD_NUMBER + '/contact';
 
-var T_AND_C_PATH = 'http://appirio.com';
+var T_AND_C_PATH = 'http://heroku.com';
 
 //variables used for localStorage
 var CACHED_SURVEY_DATA = 'SurveyData';
