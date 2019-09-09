@@ -4,7 +4,7 @@ INSERT INTO contact (
 	assigned_goal_count__c
 ) VALUES (
 	'1',
-	'test@appirio.com',
+	'test@heroku.com',
 	10
 );
 INSERT INTO contact (
@@ -13,6 +13,6 @@ INSERT INTO contact (
 	assigned_goal_count__c
 ) VALUES (
 	'2',
-	'test2@appirio.com',
+	'test2@heroku.com',
 	0
 )
